@@ -12,17 +12,19 @@
         display: none;
     }
 
+    .work-environment .work-environment-content {
+        max-width : 768px
+    }
+
     /* expert content */
     .expert-content {
         flex-direction: column;
-        justify-content: flex-end;
-        align-items: stretch;
         gap: 0px;
 
     }
 
     .expert-content .expert-content-img {
-        width: 90%;
+        width: 100%
     }
 
     .expert-content .expert-content-img img {
@@ -31,9 +33,10 @@
     }
 
     .expert-content .expert-content-text {
+        /* padding: 0px; */
         width: 100%;
     }
-
+    
     /*  */
 
     .section-about-content .section-about-content-list .section-about-content-item {
@@ -52,58 +55,49 @@
     }
 
     header nav {
-        width: 100%;
-        position: relative;
+        width: 90%;
+        /* position: relative; */
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .nav-center {
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
     }
 
-    nav .menu-btn {
+    nav .nav-center .menu-btn {
         display: inline-block;
+
         font-size: 1.9em;
-        width: 20%;
         text-align: left;
         height: 100%;
         text-align:center;
-        
-    }
-
-    nav .nav-center {
-        position: absolute;
-        top: 0%;
-        left: 0;
-        width: 100%;
-        padding: 0;
-        display: flex;
-        /* display: none; */
-        justify-content: space-between;
-
-    }
-    
-    nav .nav-center .nav-list{
-        flex-direction: column;
-        background-color: white;
-        padding: 0;
-        width: 60%;
-        width: 250px;
-        display: none;
-    }
-
-    nav .nav-center .exist-btn {
-        display: block;
-        width: 50%;
-        padding-right: 50px;
-        display: none;
-    }
-    
-    
-
-    nav .menu-btn a {
-        line-height: 90px;
         font-size: 1.9rem;
         color: #333;
     }
 
-    nav .menu-btn a:hover{
+    nav .nav-center .menu-btn:hover {
         color: #6fbd44;
+    }
+
+    nav .nav-center:hover>.nav-list {
+        display: block;
+    }
+
+    
+    
+    nav .nav-center .nav-list{
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: white;
+        padding: 15px;
+        width: 60%;
+        width: 250px;
+        display: none;
     }
 
     /* introduction */
@@ -139,6 +133,12 @@
 
     .section-about-content .section-about-content-list .section-about-content-item {
         width: 90%;
+    }
+
+    .expert-content .expert-content-text {
+        font-size: 12px;
+        text-align: left;
+        width: 80%;
     }
 
     .footer-1 .footer-1-content-item {
